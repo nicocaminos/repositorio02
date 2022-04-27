@@ -1,0 +1,208 @@
+body{
+    font-family: 'Anek Telugu', sans-serif;
+    margin: 0px;
+   
+}
+.contenedor{
+    color: #00ff00;
+    background-image: url(../005/img/10.jpg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    display: grid;
+    /*grid-template-columns: 1fr 3fr;*/
+    grid-template-areas: 
+    "nav nav"
+    "header header"
+    "main main"
+    "footer footer"
+    ;
+
+
+
+}
+
+header, footer{
+    border: solid 1px #c91212f8;
+    
+}
+
+
+
+header{
+    grid-area: header;
+}
+nav{
+    grid-area: nav;
+}
+main{
+    grid-area: main;
+}
+footer{
+    grid-area: footer;
+}
+
+.headerindex{
+    background-color: #030714;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    color: #f51010;
+
+}
+.headerindex h1{
+    font-size: 18px;
+}
+.headerindex img{
+    width: 120px;
+}
+
+nav{
+    background-image: url(../005/img/nurb.jpg);
+    background-repeat: no-repeat;
+    background-size: auto; 
+    font-family: 'Bebas Neue', cursive;
+
+    
+}
+
+nav ul li{
+    display: inline;
+    padding: 15px; 
+    
+}
+
+.navlink{
+    color: #a71414;
+    transition: all .3s ease-in-out;
+}
+.navlink:hover{
+    color: #00ff00
+}
+.mainindex{
+    background-color:;
+    color: #a71414;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.sectionmain{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sectionmain p{
+    transition: all .3s ease-in-out;
+}
+.sectionmain:hover{
+    color: #00ff00;
+    font-style: bold;
+}
+.mainindex img{
+    width: 320px;
+    border-radius: 5px;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items:  center;
+    background-color: #000000;
+    color: #00ff00;
+
+    
+}
+
+footer img{
+    width: 75px;
+}
+
+.contenedorpag{
+    display: grid;
+    grid-template-areas: 
+    "nav nav"
+    "header header"
+    "main main"
+    "footer footer"
+
+    ;
+}
+
+.mainpag{
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+.mainpag h1{
+    animation-name: h1pag;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-duration: 2s;
+    animation-delay: 2ms;
+}
+
+@keyframes h1pag{
+    25%{
+        color: #066106;
+    }
+    50%{
+        color: #00ff00;
+    }
+    75%{
+        color: #066106;
+
+    }
+    100%{
+        color: #000000;
+    }
+}
+
+.mainpag img{
+    width: 320px;
+}
+
+@media screen and (min-width: 768px){
+    .headerindex img{
+        width: 200px;
+    }
+    .headerindex h1{
+        font-size: 35px;
+    }
+    .mainindex img{
+        width: 720px;
+    }
+    footer img{
+        width: 150px;
+    }
+
+    .mainpag img{
+        width: 620px;
+    }
+
+    .headerindex img{
+        animation-name: headimg;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        animation-duration: 8s;
+    }
+    @keyframes headimg{
+        25%{
+            transform: translateX(50px);
+        }
+        50%{
+            transform: translateX(0px);
+        }
+        75%{
+            transform: translateX(50px);
+        }
+        100%{
+            transform: translateX(0px);
+        }
+    }
+}
