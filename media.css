@@ -5,7 +5,7 @@ body{
 }
 .contenedor{
     color: #00ff00;
-    background-image: url(../005/img/10.jpg);
+    background-image: url(../img/10.jpg);
     background-repeat: no-repeat;
     background-size: auto;
     display: grid;
@@ -58,7 +58,7 @@ footer{
 }
 
 nav{
-    background-image: url(../005/img/nurb.jpg);
+    background-image: url(../img/nurb.jpg);
     background-repeat: no-repeat;
     background-size: auto; 
     font-family: 'Bebas Neue', cursive;
