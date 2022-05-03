@@ -5,7 +5,7 @@ body{
 }
 .contenedor{
     color: #00ff00;
-    background-image: url(../img10.jpg);
+    background-image: url(../img/10.jpg);
     background-repeat: no-repeat;
     background-size: auto;
     display: grid;
