@@ -7,8 +7,6 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "bulid-css": "node-sass --include-path scss scss/prueba.scss css/pruebacss.css",
     "watch-css": "nodemon -e scss -x \"npm run bulid-css\""
-
-
   },
   "repository": {
     "type": "git",
