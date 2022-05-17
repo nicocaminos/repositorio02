@@ -1,6 +1,9 @@
 body {
   display: flex;
-  grid-template-areas: "nav nav" "header header" "main main" "footer footer";
+  grid-template-areas: "nav nav"
+ "header header"
+ "main main"
+ "footer footer";
   color: #02030c;
   background-image: url(../img/10.jpg); }
 
