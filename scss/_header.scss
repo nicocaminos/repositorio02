@@ -1,0 +1,42 @@
+header{
+    grid-area: "header";
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: $textcolor;
+
+    h1{
+        color: #cfd0d6;
+        align-self: center;
+    }
+    
+    img{
+        width: 100px;
+
+        @media screen and (min-width: 768px) {
+            width: 310px;           
+           
+        
+            @keyframes headimg{
+                25%{
+                    transform: translateX(50px);
+                }
+                50%{
+                    transform: translateX(0px);
+                }
+                75%{
+                    transform: translateX(50px);
+                }
+                100%{
+                    transform: translateX(0px);
+                }
+            }
+            
+        }
+    }
+        
+        
+
+        
+    
+}

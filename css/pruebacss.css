@@ -1,11 +1,55 @@
 body {
   display: flex;
-  grid-template-areas: "nav nav"
- "header header"
- "main main"
- "footer footer";
+  grid-template-areas: "nav nav" "header header" "main main" "footer footer"; }
+
+.contenedor {
   color: #02030c;
   background-image: url(../img/10.jpg); }
+
+.contenedorpag img {
+  width: 320px; }
+
+.contenedorpag header {
+  grid-area: "header";
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: #02030c; }
+  .contenedorpag header h1 {
+    color: #cfd0d6;
+    align-self: center; }
+  .contenedorpag header img {
+    width: 100px; }
+    @media screen and (min-width: 768px) {
+      .contenedorpag header img {
+        width: 310px; }
+      @keyframes headimg {
+        25% {
+          transform: translateX(50px); }
+        50% {
+          transform: translateX(0px); }
+        75% {
+          transform: translateX(50px); }
+        100% {
+          transform: translateX(0px); } } }
+
+.contenedorpag footer {
+  grid-area: "footer";
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  color: #cfd0d6;
+  background-color: #000000;
+  align-items: center;
+  padding: 3px 6px; }
+  .contenedorpag footer img {
+    width: 100px;
+    border-radius: 5px; }
+  .contenedorpag footer p {
+    font-size: 8px; }
+  @media screen and (min-width: 768px) {
+    .contenedorpag footer p {
+      font-size: 14px; } }
 
 nav {
   grid-area: "nav"; }
@@ -20,20 +64,19 @@ header {
     color: #cfd0d6;
     align-self: center; }
   header img {
-    animation-name: headimg;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-    animation-duration: 8s; }
-
-@keyframes headimg {
-  25% {
-    transform: translateX(50px); }
-  50% {
-    transform: translateX(0px); }
-  75% {
-    transform: translateX(50px); }
-  100% {
-    transform: translateX(0px); } }
+    width: 100px; }
+    @media screen and (min-width: 768px) {
+      header img {
+        width: 310px; }
+      @keyframes headimg {
+        25% {
+          transform: translateX(50px); }
+        50% {
+          transform: translateX(0px); }
+        75% {
+          transform: translateX(50px); }
+        100% {
+          transform: translateX(0px); } } }
 
 main {
   grid-area: "main";
@@ -57,6 +100,13 @@ footer {
   justify-content: space-evenly;
   color: #cfd0d6;
   background-color: #000000;
-  align-items: center; }
+  align-items: center;
+  padding: 3px 6px; }
   footer img {
-    width: 100px; }
+    width: 100px;
+    border-radius: 5px; }
+  footer p {
+    font-size: 8px; }
+  @media screen and (min-width: 768px) {
+    footer p {
+      font-size: 14px; } }

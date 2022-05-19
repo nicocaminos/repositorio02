@@ -6,8 +6,19 @@ footer{
     color: #cfd0d6  ;
     background-color: #000000;
     align-items: center;
+    padding: 3px 6px;
     
     img{
         width: 100px;
+        border-radius: 5px;
+    }
+    p{
+        font-size: 8px;
+    }
+    @media screen and (min-width: 768px) {
+        p{
+            font-size: 14px;
+        }
+        
     }
 }
